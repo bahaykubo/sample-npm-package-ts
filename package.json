@@ -9,6 +9,7 @@
   "scripts": {
     "build": "rm -rf dist && yarn tsc && yarn pack",
     "lint": "eslint src",
+    "lint-fix": "eslint src --fix && yarn lint",
     "test": "mocha --config .mocharc.yml"
   },
   "devDependencies": {
